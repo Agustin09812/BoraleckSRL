@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- añadido "minimum-scale=1" para evitar bugs al escrolear en mobile hacia abajo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+
+    <!-- S.E.O -->
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <link type="images/png" sizes="32x32" href="./assets/favicon-32x32.png" rel="icon" />
+
+    <!-- estilos -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+    <!-- ==== librerias === -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ================== -->
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="">
+                    <img src="./assets/Logo-blanco.png" class="logo" alt="logo image" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" id="navbarNavList">
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5" onclick="changeActive(this)" href="#">Inicio</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5" onclick="changeActive(this)"
+                                    href="#services">Servicios</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5" onclick="changeActive(this)" href="#works">Trabajos
+                                    Realizados</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5" onclick="changeActive(this)"
+                                    href="#company">Quienes
+                                    Somos</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5" onclick="changeActive(this)"
+                                    href="#contact">Contacto</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------------------->
+    </header>
+
+    <main>
+        <!-- SECCIÓN: PORTADA -->
+        <section id="home" class="intro-section">
+            <div class="background-image">
+                <img src="./assets/portada.jpg" class="img-fluid" alt="Fondo" />
+            </div>
+            <div class="container d-flex justify-content-center">
+                <div class="introscontainer text-white d-flex justify-content-center">
+                    <!-- comienza el contenido del intro -->
+                    <div class="intros">
+                        <h1><span>SERVICIOS PARA LA CONTRUCCIÓN Y EL MANTENIMIENTO</span></h1>
+                        <div class="d-flex justify-content-center frontpage-btns">
+                            <a href="#" target="_blank">
+                                <button type="button" class="btn btn-outline-warning btn-lg">
+                                    Contacto
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------->
+
+        <!-- SECCIÓN: SERVICIOS  -->
+        <section id="services" class="services mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <h1 class="display-3 fw-bold">Nuestros Servicios</h1>
+                </div>
+                <div class="row pt-1 pb-2 mt-0 mb-3">
+                    <div class="bg-white p-3">
+                        <p class="fw-light text-center fw-semibold">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vero, saepe quis cum, porro
+                            facilis enim, voluptatem molestiae recusandae fuga ab sit voluptatum asperiores harum
+                            suscipit debitis. Quod, magni nihil. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Iure ut ipsa, asperiores, perspiciatis debitis id rerum voluptate earum, nihil est
+                            sunt explicabo ipsum? Incidunt delectus aliquam quae optio praesentium quibusdam. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Accusantium omnis repellendus sequi
+                            doloribus, quam sit nobis tempora iusto ad consequuntur obcaecati officiis deleniti rerum
+                            eius. Ea molestias at earum tenetur?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section id="features" class="features container">
+                <div class="row feature-icons">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12 d-flex content">
+                            <div class="row align-self-center gy-4">
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-tools"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam incidunt
+                                            velit laborum perferendis porro iusto quibusdam veniam totam quam omnis
+                                            blanditiis, asperiores numquam est? Id magnam corporis sapiente ab.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-hammer"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo
+                                            exercitationem dignissimos, quas alias obcaecati accusamus dolore eveniet
+                                            corrupti aperiam optio, assumenda iste culpa nam ratione aspernatur
+                                            voluptas, temporibus quaerat.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-wrench"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus
+                                            dolore ut commodi? Fugiat unde voluptas libero aliquid, eos quas quam, vero
+                                            quia obcaecati fugit quidem sapiente est, commodi inventore.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-toolbox"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores
+                                            explicabo autem? Sunt debitis architecto mollitia, quos nisi dolorem,
+                                            laborum dicta dolores autem ullam repudiandae adipisci! Nobis blanditiis
+                                            dolorum facere!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-screwdriver"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit illo, maxime
+                                            saepe ullam iste eum laudantium nemo distinctio facere beatae laboriosam
+                                            provident nostrum corporis dolore ipsa aperiam deserunt quo natus.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 icon-box">
+                                    <i class="fas fa-paint-roller"></i>
+                                    <div>
+                                        <h4>TITULO</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur neque
+                                            eveniet expedita amet, ipsa quae assumenda sequi unde excepturi, ipsum quis
+                                            cum! Atque earum ducimus perferendis inventore perspiciatis ut quibusdam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!------------------->
+
+        <!-- SECCIÓN: TRABAJOS REALIZADOS -->
+        <section id="works" class="portfolio">
+            <div class="container">
+                <div class="row text-center mt-5">
+                    <h1 class="display-3 mt-5 fw-bold text-capitalize">
+                        Trabajos Realizados
+                    </h1>
+                    <div class="heading-line"></div>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus et, officiis harum architecto
+                        esse impedit. Odio nostrum iste reprehenderit quaerat, sunt labore amet repellat ut vero?
+                        Exercitationem ad error accusamus.
+                    </p>
+                </div>
+                <!-- BOTONES FILTRO  -->
+                <div class="row mt-2 mb-4 g-3 text-center">
+                    <div class="col-md-12">
+                        <button class="btn btn-outline-primary" type="button">Todo</button>
+                        <button class="btn btn-outline-primary" type="button">filtro 1</button>
+                        <button class="btn btn-outline-primary" type="button">filtro 2</button>
+                        <button class="btn btn-outline-primary" type="button">filtro 3</button>
+                    </div>
+                </div>
+                <!-- --------------  -->
+                <section id="gallery" class="gallery mb-5">
+                    <div class="container-fluid">
+
+                        <div class="row gy-4 justify-content-center">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-1.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-1.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-2.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-2.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-3.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-3.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-4.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-4.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-5.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-5.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-6.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-6.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-7.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-7.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-8.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-8.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-9.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-9.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-10.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-10.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-11.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-11.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <div class="gallery-item h-100">
+                                    <img src="./assets/gallery/gallery-12.jpg" class="img-fluid" alt="">
+                                    <div class="gallery-links d-flex align-items-center justify-content-center">
+                                        <a href="./assets/gallery/gallery-12.jpg" class="glightbox preview-link"><i
+                                                class="bi bi-arrows-angle-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End Gallery Item -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!------------------->
+
+        <!-- SECCIÓN: QUIENES SOMOS -->
+        <div class="container mt-5 mb-5" id="company">
+            <section class="mt-5 mb-5">
+                <div class="row text-center">
+                    <!-- <h1 class="display-3 fw-bold">Quienes Somos</h1> -->
+                    <div class="container-fluid mb-5"><img src="./assets/Logo-original.png" class="img-fluid w-25"
+                            alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione molestiae natus
+                        similique cumque, excepturi aspernatur ad eius enim iusto odio consectetur, unde earum saepe
+                        voluptates impedit tempora qui perspiciatis!. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Enim ab eveniet obcaecati perspiciatis voluptates reprehenderit laborum consectetur
+                        tempora id et, ipsum temporibus recusandae officiis impedit laboriosam, sunt consequuntur cum
+                        ipsa!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ea! Odio eius similique
+                        obcaecati, ducimus aliquam eveniet iure. Ullam natus praesentium quam numquam ea. Libero, dolor.
+                        Temporibus accusamus corrupti iusto!. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptas ipsam excepturi sit suscipit magni eos eius, qui pariatur adipisci reprehenderit
+                        eveniet expedita? Unde facilis iusto ullam, ut sit ab blanditiis.</p>
+                </div>
+            </section>
+        </div>
+        </section>
+        <!------------------->
+
+        <!-- SECCIÓN: CONTACTO -->
+        <section id="contact" class="get-started">
+            <div class="container">
+                <div class="row text-center">
+                    <h1 class="display-3 fw-bold text-capitalize">¡Contactanos!</h1>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis fuga, alias, sint at
+                        atque illum quidem cumque est dolorem odit quod porro obcaecati asperiores cum incidunt
+                        reiciendis adipisci mollitia?
+                    </p>
+                </div>
+                <div class="row text-white d-flex justify-content-center">
+                    <div class="col-12 col-lg-10 p-3">
+                        <div class="form w-100 pb-2">
+                            <!-- https://formspree.io/f/maygzrov -->
+                            <form action="" method="post" class="row">
+                                <div class="col-lg-12 mb-3">
+                                    <input type="text" name="name" id="name" placeholder="Nombre y Apellido"
+                                        class="shadow form-control form-control-lg" required />
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <input type="email" name="email" id="email" placeholder="Email"
+                                        class="shadow form-control form-control-lg" required />
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <input type="text" name="subject" id="subject" placeholder="Asunto"
+                                        class="shadow form-control form-control-lg" required />
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <textarea name="message" id="message" placeholder="Mensaje" rows="8"
+                                        class="shadow form-control form-control-lg" required></textarea>
+                                </div>
+                                <div class="text-center d-grid mt-1">
+                                    <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3">
+                                        Enviar
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------->
+    </main>
+
+    <!-- SECCIÓN: FOOTER -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- CONTENT FOR THE MOBILE NUMBER  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            <path d="M15 7a2 2 0 0 1 2 2" />
+                            <path d="M15 3a6 6 0 0 1 6 6" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">+1 728365413</a>
+                        <p class="contact-box__info--subtitle"> Mon-Fri 9am-6pm</p>
+                    </div>
+                </div>
+                <!-- CONTENT FOR EMAIL  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                            <line x1="3" y1="19" x2="9" y2="13" />
+                            <line x1="15" y1="13" x2="21" y2="19" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">info@company.com</a>
+                        <p class="contact-box__info--subtitle">Online support</p>
+                    </div>
+                </div>
+                <!-- CONTENT FOR LOCATION  -->
+                <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                    <div class="contact-box__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2"
+                            viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="18" y1="6" x2="18" y2="6.01" />
+                            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                            <line x1="9" y1="4" x2="9" y2="17" />
+                            <line x1="15" y1="15" x2="15" y2="20" />
+                        </svg>
+                    </div>
+                    <div class="contact-box__info">
+                        <a href="#" class="contact-box__info--title">New York, USA</a>
+                        <p class="contact-box__info--subtitle">NY 10012, US</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sm" style="background-color: #212121">
+            <div class="container">
+                <div class="row py-4 text-center text-white">
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                        ¡Seguinos en nuestras redes!
+                    </div>
+                    <div class="col-lg-7 col-md-6 socialmedia-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+        <div class="container mt-5">
+            <div class="row text-white justify-content-center mt-3 pb-3">
+                <div class="col-6 col-sm-4 col-lg-2 mb-4 mx-auto">
+                    <h5 class="text-capitalize fw-bold">Navegar</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="list-inline campany-list">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#works">Trabajos Realizados</a></li>
+                        <li><a href="#company">Quienes Somos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 mb-4 mx-auto">
+                    <h5 class="text-capitalize fw-bold">contact</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="list-inline campany-list">
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-5 pb-5">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <div class="footer-bottom__copyright">
+                            &COPY; Copyright 2023 | BORALECK LC S.A.S | Todos los derechos reservados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTON WHATSAPP  -->
+
+    <div class="wppbtn-container">
+        <a href="#" target="_blank" class="shadow btn-primary rounded-circle wppbtn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!------------------->
+
+    <!-- === scripts === -->
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3151bdbeb8.js" crossorigin="anonymous"></script>
+
+    <!-- =============== -->
+
+</body>
+
+</html>
