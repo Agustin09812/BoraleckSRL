@@ -164,9 +164,10 @@ p {
     text-align: center;
 }
 
-.features .feature-icons .content .icon-box {
-    display: flex;
-}
+/* .features .feature-icons .content .icon-box div img {
+    border-style: solid;
+    border-color: #14639c;
+} */
 
 .features .feature-icons .content .icon-box h4 {
     font-size: 20px;
@@ -175,17 +176,12 @@ p {
     color: #222425;
 }
 
-.features .feature-icons .content .icon-box i {
-    font-size: 44px;
-    line-height: 44px;
-    color: #14639c;
-    margin-right: 15px;
-}
-
 .features .feature-icons .content .icon-box p {
     font-size: 15px;
     color: #848484;
 }
+
+/* ### new ### */
 
 /*####################################################################*/
 
