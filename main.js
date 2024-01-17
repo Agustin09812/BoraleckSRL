@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     function handleFlexClass() {
+
         let servicesObjects = document.querySelectorAll('.services-objects')
+
         servicesObjects.forEach(function (element) {
             if (window.innerWidth >= 992) {
                 element.classList.add('d-flex')
@@ -80,6 +82,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.classList.remove('d-flex')
             }
         })
+
+        let servicesImg = document.querySelectorAll('.services-img')
+
+        servicesImg.forEach(function (element) {
+            if (window.innerWidth >= 992) {
+                element.classList.remove('justify-content-center')
+            } else {
+                element.classList.add('justify-content-center')
+            }
+        })
+
+        let servicesTxt = document.querySelectorAll('.services-txt')
+
+        servicesTxt.forEach(function (element) {
+            if (window.innerWidth >= 992) {
+                element.classList.remove('text-center')
+            } else {
+                element.classList.add('text-center')
+            }
+        })
+
+
     }
 
     handleFlexClass()
