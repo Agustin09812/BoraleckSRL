@@ -97,7 +97,7 @@ p {
 /*####################    SECCIÓN: PORTADA    ####################*/
 
 .intro-section {
-    background: #172741;
+    background: rgb(23, 39, 65);
     background: linear-gradient(0deg, #172741 0%, #14639c 35%);
     padding: 20rem;
     width: 100%;
@@ -163,7 +163,7 @@ p {
 
 /*####################################################################*/
 
-/*####################    SECCIÓN: SERVICIOS    ####################*/
+/*####################    SECCIÓN: BRAND    ####################*/
 
 .features .feature-icons {
     margin-top: 120px;
@@ -187,6 +187,48 @@ p {
 .features .feature-icons .content .icon-box p {
     font-size: 15px;
     color: #848484;
+}
+
+/* #### BRAND SUB-SECTION: CARDS #### */
+
+.card-background {
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    /* Aumenta la altura mínima aquí */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(23, 39, 65, 0.75), rgb(23, 39, 65, 0.75));
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-content h1,
+.card-content p {
+    margin: 0;
+}
+
+.card-content .btn {
+    margin-top: auto;
 }
 
 /* ### new ### */
@@ -221,12 +263,12 @@ p {
 /*####################    SECCIÓN: FOOTER    ####################*/
 
 footer {
-    background-color: #151414;
+    background-color: #172741;
 }
 
 .footer {
     padding-top: 1rem;
-    background-color: #151414;
+    background-color: #172741;
 }
 
 .footer-sm a {
@@ -243,7 +285,7 @@ footer {
 }
 
 .footer-bottom {
-    background-color: #151414;
+    background-color: #172741;
 }
 
 .footer-bottom__copyright {
