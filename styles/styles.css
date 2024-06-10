@@ -84,12 +84,12 @@ p {
 }
 
 .navbar-scrolled {
-    background-color: rgba(33, 33, 33, 0.95);
+    background-color: #172741;
     transition: background-color 500ms ease;
 }
 
 .logo {
-    width: 20rem;
+    width: 16rem;
 }
 
 /*####################################################################*/
@@ -142,10 +142,23 @@ p {
     gap: 1rem;
     margin-top: 4rem;
     max-width: 100%;
+
 }
 
 .frontpage-btns button {
     width: 20rem;
+}
+
+/*####################################################################*/
+
+/*####################    SECCIÓN: FOOTER    ####################*/
+
+.usimgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #151414;
 }
 
 /*####################################################################*/
@@ -177,74 +190,6 @@ p {
 }
 
 /* ### new ### */
-
-/*####################################################################*/
-
-/*####################    SECCIÓN: TRABAJOS REALIZADOS    ####################*/
-
-.gallery {
-    margin-top: 40px;
-}
-
-.gallery .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.gallery .gallery-item img {
-    transition: 0.3s;
-}
-
-.gallery .gallery-links {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: all ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 3;
-}
-
-.gallery .gallery-links .preview-link,
-.gallery .gallery-links .details-link {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.5);
-    transition: 0.3s;
-    line-height: 1.2;
-    margin: 30px 8px 0 8px;
-}
-
-.gallery .gallery-links .preview-link:hover,
-.gallery .gallery-links .details-link:hover {
-    color: #fff;
-}
-
-.gallery .gallery-links .details-link {
-    font-size: 30px;
-    line-height: 0;
-}
-
-.gallery .gallery-item:hover .gallery-links {
-    opacity: 1;
-}
-
-.gallery .gallery-item:hover .preview-link,
-.gallery .gallery-item:hover .details-link {
-    margin-top: 0;
-}
-
-.gallery .gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.glightbox-clean .gslide-description {
-    background: #222425;
-}
-
-.glightbox-clean .gslide-title {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-}
 
 /*####################################################################*/
 
@@ -422,11 +367,11 @@ footer {
 
 @media (max-width: 991px) {
     .menu {
-        background-color: rgba(33, 33, 33, 0.95);
+        background-color: #172741;
     }
 
     .navbar-scrolled {
-        background-color: rgba(33, 33, 33, 0.95);
+        background-color: #172741;
     }
 
 }
@@ -472,7 +417,6 @@ footer {
         position: relative;
         top: 20px;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -480,6 +424,7 @@ footer {
     .frontpage-btns {
         flex-direction: column;
     }
+
 }
 
 @media (max-width: 425px) {

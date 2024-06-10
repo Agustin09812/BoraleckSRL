@@ -71,40 +71,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    function handleFlexClass() {
+    // function handleFlexClass() {
 
-        let servicesObjects = document.querySelectorAll('.services-objects')
+    //     let servicesObjects = document.querySelectorAll('.services-objects')
 
-        servicesObjects.forEach(function (element) {
-            if (window.innerWidth >= 992) {
-                element.classList.add('d-flex')
-            } else {
-                element.classList.remove('d-flex')
-            }
-        })
+    //     servicesObjects.forEach(function (element) {
+    //         if (window.innerWidth >= 992) {
+    //             element.classList.add('d-flex')
+    //         } else {
+    //             element.classList.remove('d-flex')
+    //         }
+    //     })
 
-        let servicesImg = document.querySelectorAll('.services-img')
+    //     let servicesImg = document.querySelectorAll('.services-img')
 
-        servicesImg.forEach(function (element) {
-            if (window.innerWidth >= 992) {
-                element.classList.remove('justify-content-center')
-            } else {
-                element.classList.add('justify-content-center')
-            }
-        })
+    //     servicesImg.forEach(function (element) {
+    //         if (window.innerWidth >= 992) {
+    //             element.classList.remove('justify-content-center')
+    //         } else {
+    //             element.classList.add('justify-content-center')
+    //         }
+    //     })
 
-        let servicesTxt = document.querySelectorAll('.services-txt')
+    //     let servicesTxt = document.querySelectorAll('.services-txt')
 
-        servicesTxt.forEach(function (element) {
-            if (window.innerWidth >= 992) {
-                element.classList.remove('text-center')
-            } else {
-                element.classList.add('text-center')
-            }
-        })
+    //     servicesTxt.forEach(function (element) {
+    //         if (window.innerWidth >= 992) {
+    //             element.classList.remove('text-center')
+    //         } else {
+    //             element.classList.add('text-center')
+    //         }
+    //     })
 
 
-    }
+    // }
 
     handleFlexClass()
     window.addEventListener('resize', handleFlexClass)
