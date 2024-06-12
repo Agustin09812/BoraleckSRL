@@ -299,7 +299,7 @@ footer {
 }
 
 .footer-bottom__copyright a:hover {
-    color: #14639c;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -309,7 +309,7 @@ footer {
 
 .contact-box__icon {
     width: 2rem;
-    stroke: #14639c;
+    stroke: #fff;
     padding-top: 0.5rem;
 }
 
