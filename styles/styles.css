@@ -241,7 +241,7 @@ p {
 .intros h1 {
     font-weight: 800;
     font-size: 3.5rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px #00000066;
     text-align: center;
 }
 
@@ -266,7 +266,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: #172741ba;
 }
 
 .company-image-container {
