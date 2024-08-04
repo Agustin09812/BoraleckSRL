@@ -258,14 +258,78 @@ p {
 
 /*####################################################################*/
 
-/*####################    SECCIÓN: FOOTER    ####################*/
+/*####################    SECCIÓN: COMPANY    ####################*/
 
-.usimgcontainer {
+.company-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.company-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.company-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*####################################################################*/
+
+/*####################    SECCIÓN: POLITICS    ####################*/
+
+.politics-container {
+    padding: 40px 0;
+}
+
+.politics-text {
+    text-align: start;
+    font-size: .85em;
+}
+
+.politics-icon-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    background-color: #151414;
+}
+
+.politics-icon-list-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+}
+
+.politics-icon-list-item i {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #172741;
+}
+
+.politics-content {
+    text-align: left;
+}
+
+.politics-content h2 {
+    margin-bottom: 20px;
+}
+
+.politics-content p {
+    margin-bottom: 20px;
 }
 
 /*####################################################################*/
